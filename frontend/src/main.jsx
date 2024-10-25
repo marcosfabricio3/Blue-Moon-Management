@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+
+import NavBar from './components/navBar';
+import CalendarWeek from './components/calendar/calendarWeek';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <NavBar/>
+    <CalendarWeek/>
   </StrictMode>,
 )

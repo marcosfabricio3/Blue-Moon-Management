@@ -1,0 +1,15 @@
+.navList{
+    border: solid 1px green;
+}
+
+.routes{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navElementList{
+    padding-right: 5vw;
+}
