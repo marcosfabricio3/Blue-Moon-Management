@@ -1,10 +1,11 @@
-GET http://localhost:3001/patients HTTP/1.1
+
+GET http://localhost:3001/api/patients HTTP/1.1
 
 ###
-GET http://localhost:3001/patients/2 HTTP/1.1
+GET http://localhost:3001/api/patients/1 HTTP/1.1
 
 ###
-POST http://localhost:3001/patients/new HTTP/1.1
+POST http://localhost:3001/api/patients/ HTTP/1.1
 Content-Type: application/json
 
 {
@@ -15,65 +16,76 @@ Content-Type: application/json
 }
 
 ###
-PUT  http://localhost:3001/patients/11 HTTP/1.1
+PUT  http://localhost:3001/api/patients/8 HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "facucambio",
+    "name": "cambio",
     "debt": false,
     "queries": 1
 }
 
 ###
-DELETE   http://localhost:3001/patients/4 HTTP/1.1
+DELETE   http://localhost:3001/api/patients/8 HTTP/1.1
 
 ### BOOKING----------------------------------------------------------
-GET http://localhost:3001/booking HTTP/1.1
+GET http://localhost:3001/api/bookings HTTP/1.1
 
 ###
 
-GET http://localhost:3001/booking/2 HTTP/1.1
+GET http://localhost:3001/api/bookings/3 HTTP/1.1
 
 ###
 
-POST http://localhost:3001/booking/new HTTP/1.1
+POST http://localhost:3001/api/bookings HTTP/1.1
 Content-Type: application/json
 
 {
-        "patientID": 2,
-        "name": "mayra",
-        "kind": "masaje",
-        "phone": "097073584",
-        "extra Data": "EJEMPLO"  
+  "id": 3,
+  "name": "mayra",
+  "kind": "masaje",
+  "phone": "097073584",
+  "extra Data": "EJEMPLO"  
 }
 
 ###
 
-PUT  http://localhost:3001/booking/5 HTTP/1.1
+PUT  http://localhost:3001/api/bookings/20 HTTP/1.1
 Content-Type: application/json
 
 {
-    "patientID": 5,
     "name": "ejemplo",
-    "kind": "masaje",
+    "kind": "ejemplo",
     "phone": "EJEMPLO",
     "extra Data": "EJEMPLO"  
 }
 
 ###
 
-DELETE   http://localhost:3001/booking/5 HTTP/1.1
+PUT  http://localhost:3001/api/bookings/22 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "ejemplo 2",
+    "kind": "masaje 2",
+    "phone": "EJEMPLO 2",
+    "extra Data": "EJEMPLO 2"  
+}
+
+###
+
+DELETE   http://localhost:3001/api/bookings/22 HTTP/1.1
 
 ### record----------------------------------------------------------
-GET http://localhost:3001/records HTTP/1.1
+GET http://localhost:3001/api/records HTTP/1.1
 
 ###
 
-GET http://localhost:3001/patients/2/records HTTP/1.1
+GET http://localhost:3001/api/records/2/patient HTTP/1.1
 
 ###
 
-POST http://localhost:3001/patients/1/records HTTP/1.1
+POST http://localhost:3001/api/records/2/patient HTTP/1.1
 Content-Type: application/json
 
 {
@@ -84,15 +96,21 @@ Content-Type: application/json
 
 ###
 
-PUT  http://localhost:3001/patients/1/records/1 HTTP/1.1
+PUT  http://localhost:3001/api/records/6 HTTP/1.1
 Content-Type: application/json
 
 {
-  "date": "25/10/2024",
+  "date": "25/10/2024 put funcionando",
   "hour": "11:00",
   "attendance": false
 }
 
 ###
 
-DELETE   http://localhost:3001/patients/1/records/4 HTTP/1.1
+DELETE   http://localhost:3001/api/records/6 HTTP/1.1
+
+###
+
+DELETE   http://localhost:3001/api/records/2/patient HTTP/1.1
+
+FALTA UN put para creear un paciente
