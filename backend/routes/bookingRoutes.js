@@ -1,25 +1,31 @@
-// routes/bookingRoutes.js
-import express from 'express';
-import {getAllBookings,createBooking,updateBooking,deleteBooking,getSpecificBooking,updateBookingsByPatientID,} from '../controllers/bookingController.js';
+import express from "express";
+import {
+  getAllBookings,
+  createBooking,
+  updateBooking,
+  deleteBooking,
+  getSpecificBooking,
+  updateBookingsByPatientID,
+} from "../controllers/bookingController.js";
 
 const router = express.Router();
 
-// Obtener toda la data de reservas
-router.get('/', getAllBookings);
+// obtener todos las reservas
+router.get("/", getAllBookings);
 
-// Obtener una reserva en espesifico
-router.get('/:id', getSpecificBooking);
+// obtener reservas de paciente especifico
+router.get("/:id", getSpecificBooking);
 
-// Crear una nueva reserva
-router.post('/', createBooking);
+// crear una nueva reserva
+router.post("/", createBooking);
 
-// Actualizar una reserva existente
-router.put('/:bookingID', updateBooking);
+// actualizar una reserva en especifico
+router.put("/:bookingID", updateBooking);
 
-// Actualizar todas las reserva existentes de un mismo paciente
-router.put('/:id', updateBookingsByPatientID);
+// actualizar todas las  reservas de un paciente
+router.put("/:id", updateBookingsByPatientID);
 
-// Eliminar una reserva existente
-router.delete('/:bookingID', deleteBooking);
+// eliminar una reserva
+router.delete("/:bookingID", deleteBooking);
 
 export default router;

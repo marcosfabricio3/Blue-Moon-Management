@@ -1,5 +1,4 @@
-// utils/fileHandler.js
-import fs from 'fs/promises';
+import fs from "fs/promises";
 
 export const readData = async (filePath) => {
   try {

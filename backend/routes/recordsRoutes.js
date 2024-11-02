@@ -1,5 +1,4 @@
-// routes/recordsRoutes.js
-import express from 'express';
+import express from "express";
 import {
   getAllRecords,
   getRecordsByPatientID,
@@ -7,26 +6,26 @@ import {
   updateRecord,
   deleteRecord,
   deletePatientRecords,
-} from '../controllers/recordsController.js';
+} from "../controllers/recordsController.js";
 
 const router = express.Router();
 
-// Obtener todos los datos en registros
-router.get('/', getAllRecords);
+// obtener todos los registros
+router.get("/", getAllRecords);
 
-// Obtener solo los datos de un paciente determinado
-router.get('/:id/patient', getRecordsByPatientID);
+// obtener solo los datos de un paciente determinado
+router.get("/:id/patient", getRecordsByPatientID);
 
-// Crear un nuevo registro
-router.post('/:id/patient', createRecord);
+// crear un nuevo registro
+router.post("/:id/patient", createRecord);
 
-// Actualizar un registro existente
-router.put('/:id', updateRecord);
+// actualizar un registro existente
+router.put("/:id", updateRecord);
 
-// Eliminar un registro existente
-router.delete('/:id', deleteRecord);
+// eliminar un registro espesifico
+router.delete("/:id", deleteRecord);
 
-// Eliminar un paciernte y sus registros
-router.delete('/:id/patient', deletePatientRecords);
+// eliminar un paciernte y sus registros
+router.delete("/:id/patient", deletePatientRecords);
 
 export default router;
