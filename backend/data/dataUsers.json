@@ -1,0 +1,67 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "marcos",
+      "debt": true,
+      "queries": 3,
+      "phone": "097073584"
+    },
+    {
+      "id": 2,
+      "name": "mayra",
+      "debt": false,
+      "queries": 5,
+      "phone": "080083588"
+    },
+    {
+      "id": 11,
+      "name": "facucambio",
+      "debt": false,
+      "queries": 1,
+      "phone": "18253598"
+    },
+    {
+      "id": 5,
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598"
+    },
+    {
+      "id": 6,
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598"
+    },
+    {
+      "id": 7,
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598"
+    },
+    {
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598",
+      "id": 12
+    },
+    {
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598",
+      "id": 13
+    },
+    {
+      "name": "facundo",
+      "debt": true,
+      "queries": 1,
+      "phone": "18253598",
+      "id": 14
+    }
+  ]
+}

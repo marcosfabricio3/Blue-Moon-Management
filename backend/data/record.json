@@ -1,0 +1,70 @@
+{
+  "patient": [
+    {
+      "id": 1,
+      "patientID": 1,
+      "record": [
+        {
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true,
+          "id": 2
+        },
+        {
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true,
+          "id": 3
+        },
+        {
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true,
+          "id": 4
+        },
+        {
+          "id": 5,
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "patientID": 2,
+      "record": [
+        {
+          "id": 1,
+          "date": "4/12/2023",
+          "hour": "17:30",
+          "attendance": false
+        },
+        {
+          "id": 7,
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true
+        },
+        {
+          "id": 8,
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true
+        },
+        {
+          "id": 9,
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true
+        },
+        {
+          "id": 10,
+          "date": "24/10/2024",
+          "hour": "10:00",
+          "attendance": true
+        }
+      ]
+    }
+  ]
+}

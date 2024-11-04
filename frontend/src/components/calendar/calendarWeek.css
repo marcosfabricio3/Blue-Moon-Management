@@ -1,0 +1,14 @@
+.CalendarWeek{
+    border: 1px solid green;
+    margin: 5px;
+    padding: 5px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.CalendarWeekContainer{
+    border: 1px solid green;
+    margin: 5px;
+    padding: 5px;
+    display: inline-flex;
+}
